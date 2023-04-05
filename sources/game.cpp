@@ -219,14 +219,18 @@ using namespace ariel;
         std::cout << this->firstplayer.getname()+ " win ";
         std::cout <<this->firstplayer.getwin();
         std::cout <<" from ";
-        std::cout <<this->getcountgame()<< std::endl ;
+        std::cout <<this->getcountgame();
+        std::cout <<" and take ";
+        std::cout <<this->firstplayer.gettaken();
+        std::cout <<" cards." << std::endl ;
         std::cout << this->secondplayer.getname()+ " win ";
         std::cout << this->secondplayer.getwin();
         std::cout <<" from ";
-        std::cout <<this->getcountgame()<< std::endl ;
+        std::cout <<this->getcountgame();
+        std::cout <<" and take ";
+        std::cout <<this->secondplayer.gettaken();
+        std::cout <<" cards." << std::endl ;
         std::cout <<"there was a " ;
         std::cout <<this->getcountdraw();
         std::cout <<" draws in this game" << std::endl;
-
-
     }
