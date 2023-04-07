@@ -195,7 +195,13 @@ using namespace ariel;
     void Game::  printWiner(){
         if (this->firstplayer.cardesTaken() == this->secondplayer.cardesTaken())
     {
+        if(this->firstplayer.getstack()==0){
+           std::cout << "DEAW there is no winner" << std::endl;
+
+        }
+        else{
         throw("there is no winner");
+        }
     }
     else if (this->firstplayer.cardesTaken() > this->secondplayer.cardesTaken())
     {
@@ -233,4 +239,6 @@ using namespace ariel;
         std::cout <<"there was a " ;
         std::cout <<this->getcountdraw();
         std::cout <<" draws in this game" << std::endl;
+
+
     }
